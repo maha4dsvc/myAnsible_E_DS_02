@@ -1,0 +1,20 @@
+---
+- StudentDetails:
+   - name:  anuvind
+     phono: 898989898
+     email: anuvind@gmail.com
+     address: hyd
+
+
+   - name:  kumar
+     phono: 8888888888
+     email: kumar@gmail.com
+     address: hyd
+
+
+   - name: siddarth
+     phono: 777777777
+     email: siddarth@gmail.com
+     address: hyd
+
+  
