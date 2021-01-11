@@ -1,0 +1,14 @@
+---
+- hosts: myubuntuservers
+  become: yes
+  vars:
+    var1: git
+    var2: tree
+    var3: wget
+  tasks:
+  - name: display(debug) of var1 
+    dubug:
+      name: "{{var1}}"
+     
+
+    
