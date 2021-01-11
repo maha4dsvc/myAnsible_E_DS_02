@@ -7,7 +7,7 @@
     var3: wget
   tasks:
   - name: display(debug) of var1 
-    dubug:
+    debug:
       name: "{{var1}}"
      
 
