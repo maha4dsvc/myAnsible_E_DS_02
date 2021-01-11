@@ -8,7 +8,7 @@
   tasks:
   - name: display(debug) of var1 
     debug:
-      name: "{{var1}}"
+      msg: "{{ var1 }}"
      
 
     
