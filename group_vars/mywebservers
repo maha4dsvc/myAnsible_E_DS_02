@@ -2,3 +2,6 @@
 key: value
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
+
+myjavaOnUbuntu: openjdk-8-jre
+myjavaOnRedhat: java-1.8.0-openjdk
