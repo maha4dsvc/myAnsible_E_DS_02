@@ -9,6 +9,19 @@
   - name: debug myResult
     debug:
       msg: "{{ myResult }}"
+
+  - name: task1 for install git
+    apt:
+      name: git
+      state: present
+    when: myResult.stderr==""
+
+  - name: task2 for install tree
+    apt:
+      name: tree
+      state: present
+    when: myResult.stderr!=""
+
     
 
 
