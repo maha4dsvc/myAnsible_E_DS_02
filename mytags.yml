@@ -1,0 +1,21 @@
+---
+- hosts: myubuntuservers
+  become: yes
+  tasks:
+  - name: task1  install git
+    apt:
+      name: git
+      state: present
+    tags: mygit
+
+  - name: task2 install tree
+    apt:
+      name: tree
+      state: present
+    tags: mytree 
+
+  - name: task3 install wget
+    apt:
+      name: wget
+      state: present
+    tags: mywget
