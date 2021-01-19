@@ -1,0 +1,5 @@
+--- 
+ - name:  create a file  in nodes side
+   file:
+      path: /home/ubuntu/mahatest.txt
+      state: touch
