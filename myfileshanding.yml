@@ -15,7 +15,7 @@
      state: started
 
   - name: copy index.j2 file into all nodes sides
-    templates:
+    template:
       src: index.j2
       dest: /var/www/html/index.html
 
