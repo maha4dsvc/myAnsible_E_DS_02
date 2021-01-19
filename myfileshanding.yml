@@ -8,12 +8,15 @@
     apt: 
      name: apache2
      state: present
-     
+
   - name: start webserver on ubuntu nodes  
     service:
      name: apache2
      state: started
 
-   
+  - name: copy index.j2 file into all nodes sides
+    templates:
+      src: index.j2
+      dest: /var/www/html/index.html
 
 
