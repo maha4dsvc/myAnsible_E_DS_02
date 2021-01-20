@@ -8,6 +8,7 @@
     apt: 
      name: apache2
      state: present
+    notify:  restartwebserver
 
   - name: start webserver on ubuntu nodes  
     service:
@@ -19,4 +20,8 @@
       src: myindex.j2
       dest: /var/www/html/index.html
 
-
+  handlers:
+  - name: restartwebserver
+    service:
+      name: apache2
+      state: restarted
