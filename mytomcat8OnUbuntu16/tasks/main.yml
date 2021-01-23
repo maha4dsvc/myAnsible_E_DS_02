@@ -9,3 +9,4 @@
 - include_tasks: tomcatstart.yml
 - include_tasks: TomcatManagement.yml
 - include_tasks: Tomcatrestart.yml
+- include_tasks: DeployApplication.yml
